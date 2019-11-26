@@ -39,7 +39,7 @@ $user=$_POST['user'];
 $password=$_POST['password'];
 
 //echo '<br>';
-//echo password_hash($password, PASSWORD_DEFAULT)."\n";
+echo password_hash('admin', PASSWORD_DEFAULT)."\n";
 
 
 

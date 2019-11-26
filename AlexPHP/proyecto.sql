@@ -8,8 +8,6 @@ CREATE TABLE login (
     );
 create table texto (
   id int(200) auto_increment,
-  titulo varchar(200),
-  imagen varchar(200),
-  texto varchar(200)
-);
+  titulo
+)
 

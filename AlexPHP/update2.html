@@ -15,3 +15,25 @@
     <br><br>
     <input type='submit' value='actualizar'>
     </form>
+
+
+
+
+
+
+
+    
+    <form action='update2.php' method='POST'>
+        <input class='oculto' type='text' name='titulo1' value="<?php echo $row['titulo'] ?>">
+        <br>
+        Titulo.<br> 
+        <input type='text' name='titulo' value="<?php echo $row['titulo'] ?>">
+        <br>
+        Imagen:<br>
+        <input type='text' name='imagen' value="<?php echo $row['imagen'] ?>">
+        <br>
+        Descripcion.<br>
+        <input type='text' name='descripcion' value="<?php echo $row['texto'] ?>">
+        <br><br>
+        <input type='submit' value='actualizar'>
+    </form>

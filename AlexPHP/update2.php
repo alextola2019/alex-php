@@ -16,7 +16,7 @@ $titulo=$_POST['titulo'];
 $imagen=$_POST['imagen'];
 $texto=$_POST['descripcion'];
 
-$sql = "update texto set titulo='$titulo' , imagen='$imagen' , texto='$texto' where titulo='$titulo1'";
+$sql = "update texto set titulo='$titulo' , imagen='$imagen' , texto='$texto' where id='$titulo1'";
 
 
 $conn->query($sql) === TRUE;
