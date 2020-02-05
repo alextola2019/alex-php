@@ -3,8 +3,8 @@
 <?php
 
 
-$servername = "localhost";
-$username = "root";
+$servername = "192.168.71.72";
+$username = "cualquiera";
 $password = "";
 $dbname = "proyecto";
 

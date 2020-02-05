@@ -1,0 +1,8 @@
+{
+    "require": {
+        "dmitry-ivanov/dark-sky-api": "^1.1",
+        "willdurand/geocoder": "^4.2",
+        "geocoder-php/google-maps-provider": "^4.4",
+        "php-http/guzzle6-adapter": "^2.0"
+    }
+}

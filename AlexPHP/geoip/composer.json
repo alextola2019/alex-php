@@ -1,0 +1,10 @@
+{
+    "require": {
+        "willdurand/geocoder": "^4.2",
+        "geocoder-php/google-maps-provider": "^4.4",
+        "php-http/guzzle6-adapter": "^2.0",
+        "spatie/geocoder": "^3.6",
+        "psr/log": "^1.1",
+        "phpunit/php-text-template": "^1.2"
+    }
+}

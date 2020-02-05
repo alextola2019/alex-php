@@ -1,0 +1,87 @@
+<style>    
+    .oculto{
+        visibility:hidden;
+        position:absolute;
+        margin-left:114px;
+    }   
+    body{
+        margin-top:60px;
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+        width:400px;
+        height:300px;
+        border-radius: 10%;
+        padding-top:50px;
+        background-image:url(fondo2.jpg);
+        color:white;
+    
+    }
+    .boton{
+        width:150px;
+    }
+    .cont{
+        text-align:center;
+        width:400px;
+        height:300px;
+        border:20px solid grey;
+        border-radius: 10%;
+        padding-top:50px;
+        background-image: url(imagen/fondo3.png);
+    }
+    .cursor{
+        color:red;
+    }
+    .cursor:hover{
+        cursor: text;
+    }
+    h1{
+        margin-top:-20px;
+        font-family: sans-serif;
+    }
+
+</style>
+<html>
+    <div class="cont">
+    <body>
+    <h1>REGISTRATE PARA EDITAR FOTOS</h1>
+    <div id="a">
+        <form action="login.php" method="POST">
+        Name.<br> 
+        <input class='cursor' type="text" name="user" value="">
+        <br>
+        Password:<br>
+        <input class='cursor' type="password" name="password" value="">
+        <br><br>
+        <input class="boton" type="submit" value="login">
+        </form>
+
+        <button class="boton"  onclick="change()">New User</button>
+    </div>
+    <div id="d" class="oculto">
+        <form action="login2.php" method="POST">
+            NEW Name.<br> 
+            <input class='cursor' type="text" name="cuser" value="">
+            <br>
+            NEW Password:<br>
+            <input class='cursor' type="password" name="cpassword" value="">
+            <br><br>
+            <input class="boton" type="submit" value="create user">
+        </form>
+        <a class="boton" href="login.html"><button class="boton">Ya tengo una cuenta</button></a>
+    </div>
+    </body>
+</div>
+</html>
+
+<script>
+    function change()
+    {
+    document.getElementById("d").style.visibility="visible";
+    document.getElementById("d").style.float="center" ;
+    document.getElementById("a").style.visibility="hidden";
+    document.getElementById("a").style.float="right";
+    
+    }
+</script>
+    

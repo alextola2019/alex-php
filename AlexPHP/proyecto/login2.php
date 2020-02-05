@@ -1,8 +1,8 @@
 <?php
 
 
-$servername = "localhost";
-$username = "root";
+$servername = "192.168.71.72";
+$username = "cualquiera";
 $password = "";
 $dbname = "proyecto";
 
@@ -23,6 +23,7 @@ $hash1 = implode($row);
 
 if (password_verify($password,$hash1)) {
     header("Location: proyexto.php");
+
 }else{
     header("Location: login2.html");
 };
