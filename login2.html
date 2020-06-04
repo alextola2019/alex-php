@@ -1,0 +1,213 @@
+<style>    
+    .oculto{
+        visibility:hidden;
+        position:absolute;
+        margin-left: -webkit-calc(20% - 100px);
+    }   
+    .boton{
+        width:173px;
+
+    }
+    .cont{
+        text-align:center;
+        width:400px;
+        height:300px;
+        border:20px solid red;
+        border-radius: 10%;
+        padding-top:50px;
+
+    }
+    .margen{
+        margin-left: -webkit-calc(50% - 100px);
+    }
+    body {
+        margin:0;
+        padding:0;
+        width:100%;
+        height:100%;
+    }
+    .medio{
+        width:60%;
+        height:100%;
+        background-color:black;
+        position: absolute;
+    }
+    .triangulo1 {
+    bottom :0px;
+
+    width: -webkit-calc(100% - 150px);
+     border-top: 200px solid transparent;
+     border-left: 150px solid #f0ad4e;
+     border-bottom: 100px solid #f0ad4e;
+     position: absolute;
+    }
+    .derecha{
+        float :right;
+        width: 40%;
+        height: 100%;
+        background-image:url(imagen/fondo5.jpg);
+    }
+    .cuarto-circulo {
+     width: 100px; 
+     height: 100px; 
+     background-color: #f0ad4e;
+     -moz-border-radius: 0 100% 0 0;
+     -webkit-border-radius: 0 100% 0 0;
+     border-radius: 0 100% 0 0;
+     bottom:0px;
+    position :absolute;
+}
+    .inicio{
+        position: center;
+        margin-top:15px;
+    }
+ .cuadrado{
+     width:100%;
+     height:30%;
+     background-image:url(imagen/fondo4.jpg);
+     z-index:5;
+ }
+ .sesion{
+     margin:0;
+     text-align:center;
+     padding-top:15%;;
+     font-size: 48px;
+
+ }
+
+ .titulo{
+     color:white;
+     font-size: 60px;
+     text-align: center;
+ }
+ .titulo2{
+    color:#5D4037;
+     font-size: 100px;
+     position:absolute;
+     margin-left:120px;
+     font-family:Bradley Hand, cursive;
+ }
+ .titulo4{
+    color:#795548;
+     font-size: 100px;
+     position:absolute;
+     margin-left:400px;
+     font-family:Bradley Hand, cursive;
+ }
+ .titulo1{
+    color: #4E342E;
+     font-size: 200px;
+     position:absolute;
+     margin-top:-30px;
+     font-family: Brush Script MT, Brush Script Std, cursive;
+ }
+ .titulo3{
+    color:#6D4C41;
+     font-size: 200px;
+     position:absolute;
+     margin-top:-30px;
+     margin-left:210px;
+     font-family:Brush Script MT, Brush Script Std, cursive;
+ }
+ .tit{
+     width:483px;
+     height:200px;
+     position:absolute;
+     margin-top: -webkit-calc(20% - 100px);
+     margin-left: -webkit-calc(40% - 200px);
+ }
+ .quien{
+     width:100%;
+     height:150px;
+    bottom:0px;
+    position:absolute;
+    margin-left:5px;
+ }
+ .imagen img{
+     width:110%;
+     margin-top:8%;
+     margin-left:-10%;
+ }
+ .top{
+     width:100%;
+     position:absolute;
+     height:50px;
+
+ }
+ .topt{
+     color:blue;
+     margin-right:15px;
+     float:right;
+     font-family: Apple Chancery, cursive;
+ }
+ .texto{
+     margin-top:30px;
+     margin-left:20px;
+     font-size:13px;
+ }
+</style>
+<html>
+    <div class="medio">
+            <div class="top">
+                <p class="topt">COMPRA Y VENTA DE MUEBLES</p>
+            </div>
+            <div class="tit">
+                <h1 class="titulo1">S</h1>
+                <h1 class="titulo2">O</h1>
+                <h1 class="titulo3">M</h1>
+                <h1 class="titulo4">U</h1>
+            </div>
+            <div class="imagen"><img src="imagen/mesa.png"></div>
+            <div class="triangulo1"></div>
+            <div class="quien">
+                <p>SOLOMUEBLES</p>
+                <p class="texto">SOLOMUEBLES ES UN SITIO WEB EN EL QUE PUEDES COMPRAR Y VENDER MUEBLES DE SEGUNDA MANO AL MEJOR PRECIO A OTROS USUARIOS. PARA FACILITAR LA COMPRA Y VENTA NOSOTROS HACEMOS DE INTERMEDIARIOS A LA HORA DE ENViAR UN ARTICULO O EL DINERO PARA EVITAR CUALQUIER ESTAFA. NOSOTROS GARANTIZAMOS LA CALIDAD DEL ARTICULO PARA QUE NINGUN USUARIO SE VEA AFECTADO POR DESPERFECTOS EN NINGUN MUEBLE.</p>
+            </div>
+            
+    </div>
+    <div class="derecha">
+        <div class="cuadrado"><h1 class="sesion">INICIO DE SESION</h1></div>
+        <div class="cuarto-circulo"></div>
+        <div class="inicio">
+            <div id="a" class="margen">
+                <form action="login2.php" method="POST">
+                Usuario.<br> 
+                <input type="text" name="user" value="">
+                <br>
+                Contrasena:<br>
+                <input type="password" name="password" value="">
+                <br><br>
+                <input class="boton" type="submit" value="Entrar">
+                </form>
+        
+                <button class="boton"  onclick="change()">Nuevo Usuario</button>
+            </div>
+            <div id="d" class="oculto">
+                <form action="login3.php" method="POST">
+                    Nuevo Nombre.<br> 
+                    <input type="text" name="cuser" value="">
+                    <br>
+                    Nueva Contraseña:<br>
+                    <input type="password" name="cpassword" value="">
+                    <br><br>
+                    <input class="boton" type="submit" value="Crear Usuario">
+                </form>
+                <a class="boton" href="login2.html"><button class="boton">Ya tengo una cuenta</button></a>
+            </div>
+        </div>
+    </div>
+
+
+</html>
+
+<script>
+    function change()
+    {
+    document.getElementById("d").style.visibility="visible";
+    document.getElementById("d").style.float="center" ;
+    document.getElementById("a").style.visibility="hidden";
+    document.getElementById("a").style.float="right";
+    
+    }
+</script>
+    
