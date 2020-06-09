@@ -36,7 +36,6 @@ $a=$_SESSION['y'];
     .primero{
         width:250px;
         height:100px;
-        border:1px solid red;
         background-color:black;
         float:left;
     }
@@ -106,19 +105,16 @@ li a:hover {
 .menu{
     width:700px;
     height:100%;
-    border:1px solid red;
     float:right;
 }
 .topside{
     width:100%;
     height:100px;
-    border:1px solid red;
     background-image:url(imagen/madera.jpg)
 }
 .letra{
     width:100px;
     height:100px;
-    border:1px solid blue;
     background-color:black;
     float:right;
 }
@@ -140,39 +136,33 @@ li a:hover {
 .medio1{
     width:100%;
     height:100px;
-    border:1px solid red;
 }
 .medio2{
     width:25%;
     height:300px;
-    border:1px solid red;
     float:left;
 }
 .medio3{
     width:25%;
     height:300px;
-    border:1px solid blue;
     margin-left:25%;
 
 }
 .medio4{
     width:24.7%;
     height:300px;
-    border:1px solid yellow;
     margin-left:50%;
     margin-top:-302px;
 }
 .medio5{
     width:25%;
     height:300px;
-    border:1px solid black;
     float:right;
     margin-top:-302px;
 }
 .medio{
     width:90%;
     height:300px;
-    border:1px solid red;
     margin:auto;
     margin-top:15px;
     background-image:url(imagen/fondo1.jpg)
@@ -196,19 +186,16 @@ li a:hover {
 .texto1{
     width:100%;
     height:50px;
-    border:1px solid green;
     font-size:18px;
 }
 .nombre{
     width:100%;
     height:30px;
-    border:1px solid purple;
     font-size:24px;
 }
 .precio{
     width:40%;
     height:63px;
-    border:1px solid purple;
     float:right;
     text-align:center;
     font-size:30px;
@@ -216,7 +203,6 @@ li a:hover {
 .precio1{
     width:40%;
     height:63px;
-    border:1px solid purple;
     margin-left:60%;
 }
 .prec{
